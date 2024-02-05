@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { pingPongPlayersService } from "../services/PingPongPlayersService.js";
 import { setHTML, setText } from "../utils/Writer.js";
 
 
@@ -25,7 +26,7 @@ export class PingPongPlayersController {
       htmlString += player.PlayerCardHTMLTemplate
     })
 
-    console.log('here is the html string', htmlString);
+    // console.log('here is the html string', htmlString);
     // const playersElement = document.getElementById('players')
     // console.log(playersElement);
 
@@ -34,5 +35,6 @@ export class PingPongPlayersController {
 
   increasePlayerScore() {
     console.log('Increasing player score');
+    pingPongPlayersService.increasePlayerScore()
   }
 }
