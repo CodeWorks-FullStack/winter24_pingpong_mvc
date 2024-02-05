@@ -25,7 +25,7 @@ export class PingPongPlayer {
             <button onclick="app.PingPongPlayersController.increasePlayerScore('${this.name}')" type="button">
               Score Goes Up
             </button>
-            <button type="button">Score Goes Down</button>
+            <button onclick="app.PingPongPlayersController.decreasePlayerScore('${this.name}')" type="button">Score Goes Down</button>
           </div>
 
         </div>

@@ -38,4 +38,10 @@ export class PingPongPlayersController {
     pingPongPlayersService.increasePlayerScore(playerName)
     this.drawPingPongPlayers()
   }
+
+  decreasePlayerScore(playerName) {
+    console.log('decreasing score', playerName);
+    pingPongPlayersService.decreasePlayerScore(playerName)
+    this.drawPingPongPlayers()
+  }
 }
