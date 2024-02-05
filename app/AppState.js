@@ -19,5 +19,5 @@ class ObservableAppState extends EventEmitter {
 
 }
 
-// NOTE this object contains all data for app, and be imported as needed
+// NOTE this object contains all data for app, and can be imported as needed
 export const AppState = createObservableProxy(new ObservableAppState())

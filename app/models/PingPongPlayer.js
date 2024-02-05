@@ -6,10 +6,15 @@ export class PingPongPlayer {
 
   // NOTE constructor runs whenever a class is created (instantiated)
   constructor (pingPongPlayerName, pingPongPlayerImgUrl) {
+    // NOTE if the "this" property is not already declared inside the class, it wall add it when the constructor runs
     this.name = pingPongPlayerName
     this.imgUrl = pingPongPlayerImgUrl
+    // NOTE score will always start out at 0
     this.score = 0
   }
+
+  // NOTE each model stores their own HTML on them
+  // NOTE a getter (denoted by get decorator) must return a value, and takes in no parameters. It is accessed like a normal property, so it is not invoked when called
 
   get PlayerCardHTMLTemplate() {
     return `

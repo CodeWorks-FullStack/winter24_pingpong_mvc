@@ -7,8 +7,9 @@ import { Router } from "./utils/Router.js";
 export const router = new Router([
   {
     path: '',
+    // NOTE the controllers property of this object is the controllers you want loaded when the page loads
     controllers: [PingPongPlayersController],
-    // NOTE turn view into empty string (no spaces) if you don't want to dynamically draw pages
+    // NOTE turn view into empty string (no spaces) if you don't want to dynamically draw pages (write inside the main of the index.html)
     view: ''
   },
   {
