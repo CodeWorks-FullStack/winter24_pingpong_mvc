@@ -2,7 +2,7 @@ import { Pop } from "../utils/Pop.js"
 
 // Public
 export class HomeController {
-  constructor() {
+  constructor () {
     console.log('This is the Home Controller')
   }
 

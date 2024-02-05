@@ -4,6 +4,7 @@ export class PingPongPlayer {
   // imgUrl = ''
   // score = 0
 
+  // NOTE constructor runs whenever a class is created (instantiated)
   constructor (pingPongPlayerName, pingPongPlayerImgUrl) {
     this.name = pingPongPlayerName
     this.imgUrl = pingPongPlayerImgUrl
