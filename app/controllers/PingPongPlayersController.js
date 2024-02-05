@@ -2,20 +2,22 @@ import { AppState } from "../AppState.js";
 import { pingPongPlayersService } from "../services/PingPongPlayersService.js";
 import { setHTML, setText } from "../utils/Writer.js";
 
-
+// NOTE responsible for drawing and taking user input
 export class PingPongPlayersController {
   // NOTE always put constructor at top or bottom of class definition
 
   // NOTE this will load on page load if our router has this controller set up in one of its objects
   constructor () {
     console.log('PING PONG PLAYERS CONTROLLER LOADED!');
+    // NOTE this refers to the method inside of the class
     this.drawPingPongPlayers()
   }
 
+  // ANCHOR methods accessible to HTML
 
-  // NOTE method
   drawPingPongPlayers() {
     console.log('DRAWING PLAYERS');
+    // NOTE access the data in the AppState
     const players = AppState.pingPongPlayers
     console.log('Here are the players', players);
 
