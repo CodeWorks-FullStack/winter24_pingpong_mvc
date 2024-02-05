@@ -1,4 +1,5 @@
 import { AppState } from "../AppState.js";
+import { setHTML, setText } from "../utils/Writer.js";
 
 
 export class PingPongPlayersController {
@@ -16,5 +17,18 @@ export class PingPongPlayersController {
     console.log('DRAWING PLAYERS');
     const players = AppState.pingPongPlayers
     console.log('Here are the players', players);
+
+    let htmlString = ''
+
+    players.forEach(player => {
+      // console.log(player.PlayerCardHTMLTemplate())
+      htmlString += player.PlayerCardHTMLTemplate()
+    })
+
+    console.log('here is the html string', htmlString);
+    // const playersElement = document.getElementById('players')
+    // console.log(playersElement);
+
+    setHTML('players', htmlString)
   }
 }
