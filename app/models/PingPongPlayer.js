@@ -20,7 +20,7 @@ export class PingPongPlayer {
           alt="">
         <div class="p-3">
           <h2>${this.name}</h2>
-          <h3>Player Score: 0</h3>
+          <h3>Player Score: ${this.score}</h3>
           <div>
             <button onclick="app.PingPongPlayersController.increasePlayerScore('${this.name}')" type="button">
               Score Goes Up

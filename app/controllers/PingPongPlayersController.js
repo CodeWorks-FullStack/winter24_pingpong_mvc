@@ -33,8 +33,9 @@ export class PingPongPlayersController {
     setHTML('players', htmlString)
   }
 
-  increasePlayerScore() {
-    console.log('Increasing player score');
-    pingPongPlayersService.increasePlayerScore()
+  increasePlayerScore(playerName) {
+    console.log('Increasing player score', playerName);
+    pingPongPlayersService.increasePlayerScore(playerName)
+    this.drawPingPongPlayers()
   }
 }
