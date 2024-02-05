@@ -25,4 +25,6 @@ class PingPongPlayersService {
   }
 }
 
+
+// NOTE creates a single instance of our service and exports that to other modules, there is no other way to create a second service (singleton)
 export const pingPongPlayersService = new PingPongPlayersService()
